@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.post('/contact', async (req, res) => {
     const { name, contact, message } = req.body;
+    if(!name || !contact || !message) return;
     await sendWebhook({
         username: 'Website Message',
         content: null,
