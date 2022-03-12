@@ -12,6 +12,9 @@
 <body>
 <%- include('./components/nav.ejs') %>
 <div class="container" id="content">
+    <% if(page !== 'home') { %>
+        <h1 class="py-5"><%= title; %></h1>
+    <% } %>
     <%- body; %>
 </div>
 <%- include('./components/footer.ejs') %>
