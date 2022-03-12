@@ -1,0 +1,39 @@
+<h1 class="py-5">Contact Me</h1>
+
+<p class="lead">The most reliable method to contact me is on Discord, my tag is <code>funnyboy_roks#0001</code>, though
+    if needed, you can email me at
+    <a href="mailto:funnyboyroks@gmail.com">funnyboyroks@gmail.com</a>.</p>
+
+<!--<ul>-->
+<!--    <li>Discord: funnyboyroks#0001 (best method)</li>-->
+<!--    <li>Email: <a href="mailto:funnyboyroks@gmail.com">funnyboyroks@gmail.com</a></li>-->
+<!--</ul>-->
+
+<form id="contact-form" action="/api/contact?from=/contact" method="POST">
+    <fieldset>
+        <fieldset>
+            <div class="form-group">
+                <label for="name" class="form-label mt-4">Name</label>
+                <input name="name" type="text" class="form-control" id="name" aria-describedby="name-help"
+                       placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <label for="contact-info" class="form-label mt-4">Contact Info</label>
+                <input name="contact" type="text" class="form-control" id="contact-info"
+                       aria-describedby="contact-info-help"
+                       placeholder="Enter email or Discord tag">
+                <small id="contact-info-help" class="form-text text-muted">This will allow me to get back to
+                    you</small>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleTextarea" class="form-label mt-4">Message</label>
+                <textarea name="message" class="form-control" id="exampleTextarea" rows="3"
+                          placeholder="Message..."></textarea>
+            </div>
+
+        </fieldset>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </fieldset>
+</form>
