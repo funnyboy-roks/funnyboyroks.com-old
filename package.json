@@ -1,15 +1,16 @@
 {
-  "name": "sitessr",
-  "version": "1.0.0",
-  "description": "",
+  "name": "funnyboyroks.com",
+  "version": "1.0.2",
+  "description": "My personal website",
   "main": "src/app.ts",
   "scripts": {
     "dev": "nodemon src/app.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "pull": "git pull && npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["express", "node", "typescript", "ejs"],
+  "author": "funnyboy_roks",
+  "license": "Apache-2.0",
   "dependencies": {
     "axios": "^0.26.1",
     "cookie-parser": "^1.4.6",
